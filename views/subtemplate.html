@@ -1,0 +1,11 @@
+<% if($scope.color) { %>
+	<p style="color: <%= color %>">color is $scope.node</p>
+<% } else { %>
+	<p>no $scope.node</p>
+<% } %>
+
+<ul>
+	<% for(var i = 0; i < list.length; i++) { %>
+		<li><%= list[i] %></li>
+	<% } %>
+</ul>
