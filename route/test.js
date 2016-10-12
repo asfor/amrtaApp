@@ -1,7 +1,7 @@
 var amrta = require('amrta');
-var route = amrta.route;
+var route = amrta.route();
 
-route.get('/test', function(req, res, next) {
+route.get('/', function(req, res, next) {
 	res.render('test.html', {
 		title: 'test',
 		layout: 'layout.html',

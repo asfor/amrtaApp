@@ -9,7 +9,10 @@ app.setViewPath(path.join(__dirname, 'views'));
 app.setStaticPath(path.join(__dirname, 'public'));
 
 // 加载路由
-require('./route/route');
-require('./route/test');
+var index = require('./route/route');
+var test = require('./route/test');
+
+app.use('/', index);
+app.use('/test', test);
 
 module.exports = app;

@@ -1,5 +1,5 @@
 var amrta = require('amrta');
-var route = amrta.route;
+var route = amrta.route();
 
 route.get('/', middleware, function(req, res, next) {
 	res.render('index.html', {title: "Amrta"});

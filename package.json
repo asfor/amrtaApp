@@ -1,12 +1,12 @@
 {
   "name": "amrtaApp",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
     "debug": "~2.2.0",
-    "amrta": "~0.1.2"
+    "amrta": "~1.0.0"
   }
 }
