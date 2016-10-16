@@ -15,4 +15,11 @@ var test = require('./route/test');
 app.use('/', index);
 app.use('/test', test);
 
+// 错误流程注册
+app.error(404, (req, res) => {
+	res.setHeader('Content-Type', 'text/html');
+	res.writeHead(404, 'Not Found');
+	res.render('error.html', {status: 404, info: 'Not Found'});
+});
+
 module.exports = app;
